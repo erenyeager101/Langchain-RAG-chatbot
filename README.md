@@ -6,14 +6,6 @@ This tutorial explains how I built a chatbot using Langchain and Retrieval-Augme
 
 Before installing the dependencies listed in the `requirements.txt` file, there are some specific steps to address challenges with installing `onnxruntime`.
 
-### For MacOS Users:
-1. Install the `onnxruntime` dependency for `chromadb` using Conda:
-    ```bash
-    conda install onnxruntime -c conda-forge
-    ```
-
-
-### For Windows Users:
 1. Install the Microsoft C++ Build Tools by following this [guide](https://github.com/bycloudai/InstallVSBuildToolsWindows?tab=readme-ov-file).
 2. Ensure you complete all steps, including setting the environment variable path.
 
