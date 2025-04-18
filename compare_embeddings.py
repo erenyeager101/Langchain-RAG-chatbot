@@ -10,7 +10,7 @@ openai.api_key = os.environ.get("OPENAI_API_KEY")
 
 def main():
     # === Step 1: Generate Embedding for a Word ===
-    embedding_function = OpenAIEmbeddings()  # Initialize the embedding generator
+    embedding_function = OpenAIEmbeddings()  # Initialize the OpenAIEmbeddings embedding generator
     word = "apple"
     
    
