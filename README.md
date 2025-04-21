@@ -1,6 +1,6 @@
-# Langchain RAG Chatbot Tutorial
+# Langchain RAG Chatbot demo project
 
-This tutorial explains how I built a chatbot using Langchain and Retrieval-Augmented Generation (RAG). Follow the steps below to set up the project and understand how it works.
+This explains how I built a chatbot using Langchain and Retrieval-Augmented Generation (RAG). Follow the steps below to set up the project and understand how it works.
 
 ## Step 1: Install Dependencies
 
