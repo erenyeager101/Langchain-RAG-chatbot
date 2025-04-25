@@ -2,6 +2,48 @@
 
 This explains how I built a chatbot using Langchain and Retrieval-Augmented Generation (RAG). Follow the steps below to set up the project and understand how it works.
 
+So First lets understand whats RAG and Langchain are...
+RAG = Retrieval-Augmented Generation
+It’s a technique that combines search + generation. Instead of relying only on the LLM’s memory, it: Retrieves relevant data from external sources (e.g., your PDFs or like in this project i used md(markdown files) and Augments the prompt with this info --> then Generates a relevant answer using the LLM!
+
+🧱 Components of RAG
+Here’s what makes it tick:
+
+Document Loader
+
+Loads your data (PDFs, text files, Notion, etc.)
+
+Text Splitter
+
+Breaks the documents into chunks (to fit context size)
+
+Embedding Model
+
+Converts text chunks into vectors using OpenAI or Hugging Face embeddings
+
+Vector Store (e.g., FAISS / Chroma)
+
+Stores and lets you search vectorized text
+
+Retriever
+
+Searches for relevant chunks based on the user query
+
+LLM (OpenAI, Claude, etc.)
+
+Final stage that generates the response using the retrieved chunks
+
+✅ Why Use RAG?
+Avoids hallucination (answers based on your docs, not guesses)
+
+You don’t need to fine-tune a model
+
+Works with real-time data
+
+Now if you wanna use this and learn ---- folow :
+
+
+
 ## Step 1: Install Dependencies
 
 Before installing the dependencies listed in the `requirements.txt` file, there are some specific steps to address challenges with installing `onnxruntime`.
